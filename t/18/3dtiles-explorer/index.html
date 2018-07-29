@@ -103,7 +103,7 @@
             var promptInfo = "请输入3dtiles|gltf文件路径，例如: \nC:\\vtxf\\tileset.json";
             smalltalk.prompt(promptInfo, '').then(function (tilesetJsonFile) {
                 tilesetJsonFile = tilesetJsonFile.replace(/\\/g, '/').replace(/[\'\"]/g, '').trim();
-                if (/^http:\/\/|^file:\/\//.test(tilesetJsonFile)) {
+                if (!/^http:\/\/|^file:\/\//.test(tilesetJsonFile)) {
                     tilesetJsonFile = 'file:///' + tilesetJsonFile;
                 }
                 // if (tilesetJsonFile.endsWith(/\.gltf|\.glb/)) {
