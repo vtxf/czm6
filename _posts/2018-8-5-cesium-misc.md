@@ -3,7 +3,7 @@ layout: post
 title: Cesium相关资料汇总
 ---
 
-Cesium是一个用于显示三维地球和地图的开源js库。  
+Cesium是一个用于显示三维地球和地图的开源js库。
 
 
 官网地址：https://cesiumjs.org/ 。  
