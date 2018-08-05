@@ -46,12 +46,43 @@
             bottom: 5px;
             left: 5px;
         }
+
+        #vtxfhelp {
+            font-size: 12px;
+            display: block;
+            position: absolute;
+            width: 120px;
+            height: 65px;
+            bottom: 50px;
+            left: 8px;
+            background: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            visibility: hidden;
+            border: #eee 1px solid;
+            border-radius: 5px;
+        }
+
+        #vtxfhelp a:hover {
+            color: yellow;
+        }
+
+        #vtxfhelp a:link{
+            color: yellow;
+        }
+
+        #vtxfhelp a:visited {
+            color: yellow;
+        } 
     </style>
 </head>
 
 <body style="background: rgb(107, 106, 106);">
     <div id="cesiumContainer" class="fullWindow"></div>
     <div id="toolbar"></div>
+    <div id="vtxfhelp">
+        <p>当前版本号：1.0.1</p>
+        <p>帮助文档: <a id="vtxfGotoHelp" href="#">在线查看</a></p>
+    </div>
     <script>
         window.mobilecheck = function() {
             var check = false;
@@ -203,13 +234,27 @@
         addNewFile();
 
         function aboutVtxf() {
-            try {
-                const shell = require('electron').shell;
-                shell.openExternal('https://www.czm6.com')
-            } catch (error) {
-                window.open('https://www.czm6.com');
+            var vtxfhelp = document.getElementById('vtxfhelp');
+            if (!vtxfhelp.style.visibility || vtxfhelp.style.visibility === 'hidden') {
+                vtxfhelp.style.visibility = 'visible';
+            } else {
+                vtxfhelp.style.visibility = 'hidden';
             }
         }
+
+        function gotoHelp() {
+            try {
+                const shell = require('electron').shell;
+                shell.openExternal('https://www.czm6.com/t/18/3dtiles-explorer-help/index.html')
+            } catch (error) {
+                window.open('https://www.czm6.com/t/18/3dtiles-explorer-help/index.html');
+            }
+        }
+
+        document.getElementById('vtxfGotoHelp').addEventListener('click', function (event) {
+            event.preventDefault();
+            gotoHelp();
+        });
     </script>
 
     <button id="about" class="aboutVtxf cesium-button" onclick="aboutVtxf()">帮助</button>
