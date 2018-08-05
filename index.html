@@ -54,7 +54,7 @@ layout: default
     getCzmLastReleaseJsonInfoUrl();
 </script>
 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
 <h1>留言区</h1>
@@ -70,4 +70,6 @@ layout: default
         placeholder: '如果您对网站或者文章有意见或建议，请在此处留言。',
         meta: ['nick','mail']
     })
-</script>
+</script> -->
+
+{% include valine.html %}
