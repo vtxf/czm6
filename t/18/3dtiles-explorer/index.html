@@ -87,6 +87,12 @@
             }
         });
 
+        viewer.scene.context._colorBufferFloat = true;
+        if (viewer.scene._oit) {
+            viewer.scene._oit._translucentMRTSupport = true;
+            viewer.scene._oit._translucentMultipassSupport = true;
+        }
+
         viewer._cesiumWidget._creditContainer.style.display = 'none';
         // viewer.clock.startTime = Cesium.JulianDate.fromIso8601("2018-07-26T15:00:23+08:00");
         viewer.clock.startTime = Cesium.JulianDate.fromIso8601("2018-07-26T15:00:23+08:00");
