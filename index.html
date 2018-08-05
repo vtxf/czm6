@@ -42,7 +42,8 @@ layout: default
                     var date = new Date(zipAsset.created_at);
                     var ldate = date.toLocaleDateString() + date.toLocaleTimeString();
                     czmlstDiv.innerHTML = 
-                        `<b>Cesium最新版</b> <a title='点击下载' href='${zipAsset.browser_download_url}'>${zipAsset.name}(${ldate})</a>`
+                        `<b>Cesium最新版</b> <a title='点击下载' href='${zipAsset.browser_download_url}'>${zipAsset.name}(北京时间：${ldate})</a>` +
+                        `<br>更多<a href='t/18/czms/index.html'>下载</a>`
                 } else {
                     czmlstDiv.innerHTML = '获取最新版本信息失败！可能因为操作过于频繁！';
                 }

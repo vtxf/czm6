@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h1>Cesium编译包官方下载</h1>
+<div id="czmlst">
+</div>
+
+<script>
+    function getCzmLastReleaseJsonInfoUrl() {
+        var czmlstDiv = document.getElementById('czmlst');
+        var czmReleaseJsonInfoUrl = 'https://api.github.com/repos/AnalyticalGraphicsInc/cesium/releases';
+        fetch(czmReleaseJsonInfoUrl)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (czmLastReleaseJsonInfos) {
+                var str = '';
+                czmLastReleaseJsonInfos.forEach(lrj => {
+                    var versionName = lrj.name;
+                    if (typeof lrj.assets !== 'undefined') {
+                        var zipAsset = lrj.assets[0];
+                        var date = new Date(zipAsset.created_at);
+                        var ldate = date.toLocaleDateString() + date.toLocaleTimeString();
+                        str += `<a title='点击下载' href='${zipAsset.browser_download_url}'>${zipAsset.name}(北京时间：${ldate})</a><br>`;
+                    }
+                });
+                czmlstDiv.innerHTML = str;
+            });
+    }
+    
+    var czmList = 'https://github.com/AnalyticalGraphicsInc/cesium/releases';
+
+    getCzmLastReleaseJsonInfoUrl();
+</script>
