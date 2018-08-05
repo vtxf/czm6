@@ -24,7 +24,7 @@ layout: default
                         var date = new Date(zipAsset.created_at);
                         var ldate = date.toLocaleDateString() + date.toLocaleTimeString();
                         var sizeStr = '' + (zipAsset.size / 1024.0 / 1024.0).toFixed(1);
-                        str += `Cesium&nbsp${lrj.tag_name}(北京时间：${ldate})&nbsp&nbsp&nbsp<a title='点击下载' href='${zipAsset.browser_download_url}'>zip包下载(${sizeStr}M)</a>&nbsp&nbsp&nbsp<a href="${html_url}" target="blank">官方说明</a><br>`;
+                        str += `Cesium&nbsp;${lrj.tag_name}(北京时间：${ldate})&nbsp;&nbsp;&nbsp;<a title='点击下载' href='${zipAsset.browser_download_url}'>zip包下载(${sizeStr}M)</a>&nbsp;&nbsp;&nbsp;<a href="${html_url}" target="blank">官方说明</a><br>`;
                     }
                 });
                 czmlstDiv.innerHTML = str;
