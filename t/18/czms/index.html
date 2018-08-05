@@ -28,6 +28,9 @@ layout: default
                     }
                 });
                 czmlstDiv.innerHTML = str;
+            })
+            .catch(function (error) {
+                czmlstDiv.innerHTML = `获取版本信息失败！可能因为操作过于频繁！<br>请尝试<a href='index.html'>此地址</a>或者直接进入<a href="https://www.cesium.com">Cesium官网</a>`;
             });
     }
     

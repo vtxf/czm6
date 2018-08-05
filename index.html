@@ -5,23 +5,6 @@ layout: default
 <h1> 3dtiles&gltf浏览器 </h1>
 <a href="./t/18/3dtiles-explorer/index.html" target="blank">3dtiles&gltf浏览器</a>
 
-<div class="posts">
-    {% for post in site.posts %}
-    <article class="post">
-
-        <h2>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </h2>
-
-        <div class="entry">
-            {{ post.excerpt }}
-        </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-    {% endfor %}
-</div>
-
 <h1>Cesium官方资料下载</h1>
 <div id="czms">
     <a href="https://github.com/AnalyticalGraphicsInc/cesium" target="blank">Cesium源码地址</a>
@@ -49,10 +32,28 @@ layout: default
                         `Cesium最新版:&nbsp${lrj.tag_name}(${ldate})&nbsp&nbsp&nbsp<a title='点击下载' href='${zipAsset.browser_download_url}'>zip包下载(${sizeStr}M)</a>&nbsp&nbsp&nbsp<a href="${html_url}" target="blank">官方说明</a>` + 
                         `<br>更多<a href='t/18/czms/index.html'>下载</a>`
                 } else {
-                    czmlstDiv.innerHTML = '获取最新版本信息失败！可能因为操作过于频繁！';
+                    czmlstDiv.innerHTML = `获取最新版本信息失败！可能因为操作过于频繁！<br>请尝试<a href='t/18/czms/index.html'>此地址</a>或者直接进入<a href="https://www.cesium.com">Cesium官网</a>`;
                 }
             });
     }
 
     getCzmLastReleaseJsonInfoUrl();
 </script>
+
+<h1>博客</h1>
+<div class="posts">
+    {% for post in site.posts %}
+    <article class="post">
+
+        <h2>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+
+        <div class="entry">
+            {{ post.excerpt }}
+        </div>
+
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endfor %}
+</div>
