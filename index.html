@@ -9,9 +9,9 @@ layout: default
     {% for post in site.posts %}
     <article class="post">
 
-        <h1>
+        <h2>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </h1>
+        </h2>
 
         <div class="entry">
             {{ post.excerpt }}
@@ -67,7 +67,7 @@ layout: default
         notify: false,
         verify: false,
         avatar: 'mp',
-        placeholder: '如果对网站有意见或建议，请在此处留言。',
+        placeholder: '如果您对网站或者文章有意见或建议，请在此处留言。',
         meta: ['nick','mail']
     })
 </script>
