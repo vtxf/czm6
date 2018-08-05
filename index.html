@@ -22,8 +22,10 @@ layout: default
     {% endfor %}
 </div>
 
-<h1>Cesium编译包官方下载</h1>
-<div id="czmlst">
+<h1>Cesium官方资料下载</h1>
+<div id="czms">
+    <a href="https://github.com/AnalyticalGraphicsInc/cesium" target="blank">Cesium源码地址</a>
+    <p id=czmlst></p>
 </div>
 
 <script>
@@ -44,35 +46,13 @@ layout: default
                     var ldate = date.toLocaleDateString();
                     var sizeStr = '' + (zipAsset.size / 1024.0 / 1024.0).toFixed(1);
                     czmlstDiv.innerHTML = 
-                        `Cesium最新版:&nbsp${lrj.tag_name}(${ldate})&nbsp&nbsp&nbsp<a title='点击下载' href='${zipAsset.browser_download_url}'>zip包下载(${sizeStr}M)</a>&nbsp&nbsp&nbsp<a href="${html_url}" target="blank">官方说明</a><br>` + 
+                        `Cesium最新版:&nbsp${lrj.tag_name}(${ldate})&nbsp&nbsp&nbsp<a title='点击下载' href='${zipAsset.browser_download_url}'>zip包下载(${sizeStr}M)</a>&nbsp&nbsp&nbsp<a href="${html_url}" target="blank">官方说明</a>` + 
                         `<br>更多<a href='t/18/czms/index.html'>下载</a>`
                 } else {
                     czmlstDiv.innerHTML = '获取最新版本信息失败！可能因为操作过于频繁！';
                 }
             });
     }
-    
-    var czmList = 'https://github.com/AnalyticalGraphicsInc/cesium/releases';
 
     getCzmLastReleaseJsonInfoUrl();
 </script>
-
-<!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-
-<h1>留言区</h1>
-<div id="vcomments"></div>
-<script>
-    new Valine({
-        el: '#vcomments',
-        appId: 'nCkVkWJxtvg0eVAPGGTqUyes-gzGzoHsz',
-        appKey: 'q3GXE9Jx2WN9Us4jGPUlhBmq',
-        notify: false,
-        verify: false,
-        avatar: 'mp',
-        placeholder: '如果您对网站或者文章有意见或建议，请在此处留言。',
-        meta: ['nick','mail']
-    })
-</script> -->
-
-{% include valine.html %}
