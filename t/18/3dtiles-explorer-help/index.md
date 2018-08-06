@@ -4,7 +4,8 @@ title: 3dtiles&gltf浏览器帮助
 ---
 
 ## 1 下载PC端程序
-<a href="https://pan.baidu.com/s/1Uat3DtH9cf79K4bLZGiZAA" target="blank">百度网盘下载</a>
+<a target="blank" href="https://pan.baidu.com/s/1Uat3DtH9cf79K4bLZGiZAA">百度网盘下载</a>&nbsp;
+<a target="blank" href="https://download.csdn.net/download/xiaofeii/10585026">CSDN下载</a>  
 
 ## 2 安装之后，桌面上会出现相应的图标
 ![](images/20180805191139.jpg)
