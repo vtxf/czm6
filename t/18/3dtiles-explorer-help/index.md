@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 3dtiles&gltf浏览器帮助
+title: 3dtiles&gltf浏览器 使用指南
 ---
 
 ## 1 下载PC端程序
