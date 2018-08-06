@@ -5,6 +5,7 @@ title: 3dtiles&gltf浏览器 使用指南
 
 ## 0 简介
 3dtiles&gltf浏览器 是一个专门用来<b>浏览本地离线3dtiles和gltf数据</b>的工具。
+![](images/20180805190808.jpg)
 
 ## 1 下载PC端程序
 当前最新版本: 1.0.1
