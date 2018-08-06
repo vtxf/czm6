@@ -5,7 +5,8 @@ title: Wish3D的模型压平功能分析
 
 ### Wish3D的模型压平功能分析
 
-分析一下wish3dhttp://www.wish3d.com/Examples/Flat.html
+分析一下wish3d的模型压平功能：http://www.wish3d.com/Examples/Flat.html  
+<!-- more -->
 
 ##### 节点绘制shader
 以下shader来自于PageLODNodeVS.glsl，绘制每一个Wish3D的PageLOD数据时，vertexShader中会从某个深度纹理（实际上是颜色纹理）中获取到每一个顶点的高度值。
