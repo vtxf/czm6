@@ -181,9 +181,9 @@
                 localStorage.setItem('lastFilePath', tilesetJsonFile);
 
                 tilesetJsonFile = tilesetJsonFile.replace(/\\/g, '/').replace(/[\'\"]/g, '').trim();
-                if (!/^http:\/\/|^file:\/\//.test(tilesetJsonFile)) {
-                    tilesetJsonFile = 'file:///' + tilesetJsonFile;
-                }
+                // if (!/^http:\/\/|^file:\/\//.test(tilesetJsonFile)) {
+                //     tilesetJsonFile = 'file:///' + tilesetJsonFile;
+                // }
                 // if (tilesetJsonFile.endsWith(/\.gltf|\.glb/)) {
                 if (/\.gltf$|\.glb$/.test(tilesetJsonFile)) {
                     createModel(tilesetJsonFile, 5000.0);
