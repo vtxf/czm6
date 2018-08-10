@@ -199,7 +199,7 @@
                     tileset.readyPromise.then(function (tileset) {
                         viewer.scene.primitives.add(tileset);
                         viewer.trackedEntity = undefined;
-                        viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-45.0), tileset.boundingSphere
+                        viewer.flyTo(tileset, new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-45.0), tileset.boundingSphere
                             .radius * 3.0));
 
                     }).otherwise(function (error) {
