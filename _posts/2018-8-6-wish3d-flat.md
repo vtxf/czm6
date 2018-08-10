@@ -1,11 +1,9 @@
 ---
-layout: post
-title: Wish3D的模型压平功能分析
+layout: post  
+title: Wish3D的模型压平功能分析  
 ---
 
-### Wish3D的模型压平功能分析
-
-分析一下wish3d的模型压平功能：http://www.wish3d.com/Examples/Flat.html  
+分析一下Wish3D的模型压平功能。wishi3d的示例程序在这里：[示例程序](http://www.wish3d.com/Examples/Flat.html)。
 <!-- more -->
 
 ##### 节点绘制shader
@@ -119,9 +117,11 @@ Wish3D始终在一个4096*4096大纹理上创建多边形，要是有多个多�
 ![输入图片说明](https://images.gitee.com/uploads/images/2018/0806/210526_b95165b2_470194.png "屏幕截图.png")
 
 正常拍平后的效果是这样的：
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2018/0806/210548_547fa6d2_470194.png "屏幕截图.png")
 
 如果绘制了多个压平多边形，且距离过远时，就出现这样的情况了：
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2018/0806/210602_b351ed94_470194.png "屏幕截图.png")
 
 ##### 我想到的有三种实现方式：

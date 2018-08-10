@@ -1,13 +1,13 @@
 ---
-layout: post
-title: CZM6.com名称的由来
+layout: post  
+title: CZM6.com名称的由来  
 ---
 
 之前在QQ群中，众多开发者都喜欢用Cesium的简称，但是每个人的称法都不太一样。有的叫CE，有的叫CEM。但是这些简称即不统一也有点儿让人难以理解。  
 <!-- more -->
 
 实际上Cesium源码中有大量地方使用czm作为Cesium的简称来使用，如下图所示。
-![CZM的由来](../../../images/20180805150416.png)
+![CZM的由来](https://images.gitee.com/uploads/images/2018/0807/092426_e023343e_470194.png "屏幕截图.png")
 
 Cesium的发音是这样的：  
 英['si:zɪəm]  
