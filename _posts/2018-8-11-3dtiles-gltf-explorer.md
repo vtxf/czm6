@@ -4,7 +4,7 @@ title: 介绍一个可以查看离线3dtiles&gltf的程序
 ---
 
 ## 0 简介
-3dtiles&gltf浏览器 是一个专门用来<b>浏览本地离线3dtiles和gltf数据</b>的工具。
+3dtiles&gltf浏览器 是一个专门用来<b>浏览本地离线3dtiles和gltf数据</b>的工具。有的时候手头有3dtiles数据，可以没有发布成服务，可以用这个工具快捷的查看一下。
 <!-- more -->
 
 ![3dtiles&gltf浏览器](https://images.gitee.com/uploads/images/2018/0811/193642_a18e826c_470194.png "3dtiles&gltf浏览器.png")
