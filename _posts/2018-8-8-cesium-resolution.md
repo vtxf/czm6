@@ -34,3 +34,5 @@ if (Cesium.FeatureDetection.supportsImageRenderingPixelated()) {
 ![显示设置](https://images.gitee.com/uploads/images/2018/0808/222300_ad7eacb8_470194.png "显示设置.png")
 
 当然还有另外一种不改代码变清晰的方法，就是把这个缩放大小调整为100%。  
+
+点击[czm6.com](https://www.czm6.com)，查看更多内容。
