@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: 写一个Cesium Sandcastle中没有的PlaneGeometry创建的示例  
+title: Cesium中使用Primitive API 创建平面  
 ---
 
 ### Cesium Sandcastle中Entity API创建的Plane有点儿问题  

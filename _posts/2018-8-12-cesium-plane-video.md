@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: 在Cesium的PlaneGeometry上播放视频
+title: Cesium开发：在平面上播放视频  
 ---
 
 Cesium的sancastle示例中有一个在球体上创建视频的例子，不过大家可能更需要一个在平面上创建视频，好应用到实际工程中去。
