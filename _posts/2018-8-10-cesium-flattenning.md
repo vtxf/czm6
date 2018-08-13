@@ -14,7 +14,7 @@ title: Cesium上的倾斜模型压平操作展示
 
 这里是模型压平的[演示视频](https://www.bilibili.com/video/av28905193/)
 
-<iframe with="800px" height="600px" src="//player.bilibili.com/player.html?aid=28905193&cid=50119893&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe width="800px" height="600px" src="//player.bilibili.com/player.html?aid=28905193&cid=50119893&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 
 
